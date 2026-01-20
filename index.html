@@ -1,0 +1,954 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Engineer - Wikipedia</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.6;
+            background-color: #f6f6f6;
+        }
+        .wikipedia-header {
+            background-color: #fff;
+            padding: 10px 0;
+            border-bottom: 1px solid #a2a9b1;
+            margin-bottom: 10px;
+        }
+        .wikipedia-header a {
+            color: #0645ad;
+            text-decoration: none;
+            font-size: 0.8em;
+            margin-right: 15px;
+        }
+        .wikipedia-header a:hover {
+            text-decoration: underline;
+        }
+        .infobox {
+            float: right;
+            margin: 0 0 1em 1em;
+            border: 1px solid #a2a9b1;
+            padding: 0.5em;
+            background-color: #f8f9fa;
+            width: 300px;
+            font-size: 0.9em;
+        }
+        .infobox th {
+            text-align: left;
+            padding: 4px;
+            background-color: #eaecf0;
+        }
+        .infobox td {
+            padding: 4px;
+        }
+        h1 {
+            font-size: 1.8em;
+            font-family: 'Linux Libertine', 'Georgia', 'Times', serif;
+            border-bottom: 3px solid #a2a9b1;
+            padding-bottom: 0.2em;
+            font-weight: normal;
+        }
+        h2 {
+            font-size: 1.5em;
+            font-family: 'Linux Libertine', 'Georgia', 'Times', serif;
+            border-bottom: 1px solid #a2a9b1;
+            padding-bottom: 0.2em;
+            font-weight: normal;
+        }
+        h3 {
+            font-size: 1.2em;
+            font-family: 'Linux Libertine', 'Georgia', 'Times', serif;
+            font-weight: normal;
+        }
+        .main-content {
+            margin-right: 320px;
+            background-color: #fff;
+            padding: 20px;
+            border: 1px solid #a2a9b1;
+            max-width: none;
+        }
+        .clear {
+            clear: both;
+        }
+        .toc {
+            background-color: #f9f9f9;
+            border: 1px solid #aaa;
+            padding: 5px;
+            font-size: 0.9em;
+            display: inline-block;
+            margin-bottom: 1em;
+        }
+        .toc-title {
+            text-align: center;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        .toc ul {
+            list-style-type: none;
+            padding-left: 20px;
+            margin: 0;
+        }
+        .toc li {
+            margin: 2px 0;
+        }
+        .toc a {
+            color: #0645ad;
+            text-decoration: none;
+        }
+        .toc a:hover {
+            text-decoration: underline;
+        }
+        .edit-link {
+            font-size: 0.7em;
+            color: #0645ad;
+            text-decoration: none;
+            margin-left: 10px;
+        }
+        .edit-link:hover {
+            text-decoration: underline;
+        }
+        .wikipedia-image-container {
+            margin: 20px 0;
+            text-align: left;
+        }
+        .wikipedia-image {
+            width: 321px;
+            height: 109px;
+            max-width: 100%;
+            height: auto;
+            border: 1px solid #a2a9b1;
+            border-radius: 4px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+        .analysis-image {
+            float: right;
+            margin: 0 0 1em 1em;
+            border: 1px solid #ccc;
+            padding: 5px;
+            background-color: #f9f9f9;
+            width: 250px;
+        }
+        .analysis-image img {
+            max-width: 100%;
+            height: auto;
+        }
+        .analysis-image .caption {
+            font-size: 0.9em;
+            line-height: 1.3em;
+            margin-top: 4px;
+            font-style: italic;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="wikipedia-image-container">
+        <img src="wikipedia.png" alt="Wikipedia" class="wikipedia-image">
+    </div>
+    
+    <div class="wikipedia-header">
+        <a href="#">Article</a>
+        <a href="#">Talk</a>
+        <a href="#">Read</a>
+        <a href="#">Edit</a>
+        <a href="#">View history</a>
+    </div>
+    
+    <div class="main-content">
+        <h1>Engineer</h1>
+        
+        <div class="infobox">
+        <table>
+            <tr>
+                <th colspan="2" style="text-align: center;">Engineer</th>
+            </tr>
+            <tr>
+                <td colspan="2" style="text-align: center;">
+                    <img src="images/engineer_selfie.jpg" alt="Engineer selfie" style="max-width: 100%; height: auto;">
+                    <div style="font-size: 0.9em; line-height: 1.3em; margin-top: 4px; font-style: italic;">
+                        Polina Tkatšuk, geodetic engineer, analyzing the peculiarities of her mobile device at Muuga in 2025
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <th>Occupation</th>
+                <td>Profession</td>
+            </tr>
+            <tr>
+                <th>Activity sectors</th>
+                <td>Applied science, research and development, industry, business</td>
+            </tr>
+            <tr>
+                <th>Related jobs</th>
+                <td>Scientist, architect, project manager, inventor, astronaut</td>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td>Practitioner of engineering</td>
+            </tr>
+        </table>
+    </div>
+    <div id="password4Group" style="display: none; position: absolute; top: 160px; left: 1240px; background-color: white; padding: 15px; border: 1px solid #a2a9b1; border-radius: 5px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+        <label for="password4" style="display: block; margin-bottom: 5px; font-size: 0.9em; color: green; cursor: pointer; text-decoration: underline;" onclick="highlightLettersGreen()">Password 4:</label>
+        <input type="password" id="password4" name="password4" style="width: 150px; padding: 6px; border: 1px solid #a2a9b1; border-radius: 3px; font-size: 0.9em; color: green; margin-bottom: 10px;">
+        <button type="button" onclick="validatePassword4()" style="background-color: #eaecf0; border: 1px solid #a2a9b1; padding: 6px 12px; border-radius: 3px; cursor: pointer; font-size: 0.9em; margin-top: 5px;">Login</button>
+        <div id="dobGroup" style="display: none; margin-top: 15px;">
+            <label for="dob" style="display: block; margin-bottom: 5px; font-size: 0.9em; color: green;">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" style="width: 150px; padding: 6px; border: 1px solid #a2a9b1; border-radius: 3px; font-size: 0.9em; color: green; margin-bottom: 10px;">
+            <button type="button" onclick="validateDOB()" style="background-color: #eaecf0; border: 1px solid #a2a9b1; padding: 6px 12px; border-radius: 3px; cursor: pointer; font-size: 0.9em; margin-top: 5px;">Submit</button>
+            <div id="password5Group" style="display: none; margin-top: 15px;">
+                <label for="catsOrDogs" style="display: block; margin-bottom: 5px; font-size: 0.9em; color: green;">cats or dogs?</label>
+                <input type="text" id="catsOrDogs" name="catsOrDogs" style="width: 150px; padding: 6px; border: 1px solid #a2a9b1; border-radius: 3px; font-size: 0.9em; color: green; margin-bottom: 10px;">
+                <button type="button" onclick="validateCatsOrDogs()" style="background-color: #eaecf0; border: 1px solid #a2a9b1; padding: 6px 12px; border-radius: 3px; cursor: pointer; font-size: 0.9em; margin-top: 5px;">Submit</button>
+                <div id="onePlusOneGroup" style="display: none; margin-top: 15px;">
+                    <label for="onePlusOne" style="display: block; margin-bottom: 5px; font-size: 0.9em; color: green;">1+1</label>
+                    <input type="text" id="onePlusOne" name="onePlusOne" style="width: 150px; padding: 6px; border: 1px solid #a2a9b1; border-radius: 3px; font-size: 0.9em; color: green; margin-bottom: 10px;">
+                    <button type="button" onclick="validateOnePlusOne()" style="background-color: #eaecf0; border: 1px solid #a2a9b1; padding: 6px 12px; border-radius: 3px; cursor: pointer; font-size: 0.9em; margin-top: 5px;">Submit</button>
+                    <div id="mathImageGroup" style="display: none; margin-top: 15px;">
+                        <img src="mathimage.jpg" alt="Math problem" style="width: 154px; height: 100px; display: block; margin-bottom: 10px;" onerror="if (!this.dataset.fallbackTried) { this.dataset.fallbackTried='1'; this.src='images/mathimage.jpg'; }">
+                        <input type="text" id="mathImageAnswer" name="mathImageAnswer" style="width: 150px; padding: 6px; border: 1px solid #a2a9b1; border-radius: 3px; font-size: 0.9em; color: green; margin-bottom: 10px;" placeholder="Answer">
+                        <button type="button" onclick="validateMathImage()" style="background-color: #eaecf0; border: 1px solid #a2a9b1; padding: 6px 12px; border-radius: 3px; cursor: pointer; font-size: 0.9em; margin-top: 5px;">Submit</button>
+                        <div id="killingCurseGroup" style="display: none; margin-top: 15px;">
+                            <label for="killingCurse" style="display: block; margin-bottom: 5px; font-size: 0.9em; color: green;">Killing curse</label>
+                            <input type="text" id="killingCurse" name="killingCurse" style="width: 150px; padding: 6px; border: 1px solid #a2a9b1; border-radius: 3px; font-size: 0.9em; color: green; margin-bottom: 10px;">
+                            <button type="button" onclick="validateKillingCurse()" style="background-color: #eaecf0; border: 1px solid #a2a9b1; padding: 6px 12px; border-radius: 3px; cursor: pointer; font-size: 0.9em; margin-top: 5px;">Submit</button>
+                            <div id="presidentQuestionGroup" style="display: none; margin-top: 15px;">
+                                <img src="presidentquestion.png" alt="President question" style="width: 60px; height: 403px; display: block; margin-bottom: 10px;" onerror="if (!this.dataset.fallbackTried) { this.dataset.fallbackTried='1'; this.src='images/presidentquestion.png'; }">
+                                <input type="text" id="presidentAnswer" name="presidentAnswer" style="width: 150px; padding: 6px; border: 1px solid #a2a9b1; border-radius: 3px; font-size: 0.9em; color: green; margin-bottom: 10px;" placeholder="Answer">
+                                <button type="button" onclick="validatePresidentQuestion()" style="background-color: #eaecf0; border: 1px solid #a2a9b1; padding: 6px 12px; border-radius: 3px; cursor: pointer; font-size: 0.9em; margin-top: 5px;">Submit</button>
+                                <div id="turningHeadQuestionGroup" style="display: none; margin-top: 15px;">
+                                    <img src="turninghead.jpg" alt="Turning head question" style="width: 1537px; height: 1192px; display: block; margin-bottom: 10px; max-width: 300px; height: auto;" onerror="if (!this.dataset.fallbackTried) { this.dataset.fallbackTried='1'; this.src='images/turninghead.jpg'; }">
+                                    <div style="display: flex; align-items: center; gap: 10px;">
+                                        <span style="font-size: 0.9em; color: green;">sina rn</span>
+                                        <button type="button" onclick="validateTurningHeadQuestion()" style="background-color: #eaecf0; border: 1px solid #a2a9b1; padding: 6px 12px; border-radius: 3px; cursor: pointer; font-size: 0.9em; margin-top: 5px;">ok</button>
+                                    </div>
+                                    <div id="hamiltonQuestionGroup" style="display: none; margin-top: 15px;">
+                                        <label for="hamiltonAnswer" style="display: block; margin-bottom: 5px; font-size: 0.9em; color: green;">Who shot Hamilton?</label>
+                                        <input type="text" id="hamiltonAnswer" name="hamiltonAnswer" style="width: 150px; padding: 6px; border: 1px solid #a2a9b1; border-radius: 3px; font-size: 0.9em; color: green; margin-bottom: 10px;" placeholder="Answer">
+                                        <button type="button" onclick="validateHamiltonQuestion()" style="background-color: #eaecf0; border: 1px solid #a2a9b1; padding: 6px 12px; border-radius: 3px; cursor: pointer; font-size: 0.9em; margin-top: 5px;">Submit</button>
+                                        <div id="password5QuestionGroup" style="display: none; margin-top: 15px;">
+                                            <label for="password5Answer" style="display: block; margin-bottom: 5px; font-size: 0.9em; color: green;">password 5</label>
+                                            <input type="password" id="password5Answer" name="password5Answer" style="width: 150px; padding: 6px; border: 1px solid #a2a9b1; border-radius: 3px; font-size: 0.9em; color: green; margin-bottom: 10px;" placeholder="Password">
+                                            <div style="display: flex; align-items: center; gap: 5px;">
+                                                <button type="button" onclick="validatePassword5Question()" style="background-color: #eaecf0; border: 1px solid #a2a9b1; padding: 6px 12px; border-radius: 3px; cursor: pointer; font-size: 0.9em; margin-top: 5px;">Login</button>
+                                                <span id="password5Arrow" style="display: none; color: green; font-size: 1.2em; margin-top: 5px;">↑</span>
+                                            </div>
+                                            <div id="finalPasswordGroup" style="display: none; margin-top: 15px;">
+                                                <label for="finalPasswordAnswer" style="display: block; margin-bottom: 5px; font-size: 0.9em; color: red; cursor: pointer; text-decoration: underline;" onclick="highlightLettersRed()">Final password</label>
+                                                <input type="password" id="finalPasswordAnswer" name="finalPasswordAnswer" style="width: 150px; padding: 6px; border: 1px solid #a2a9b1; border-radius: 3px; font-size: 0.9em; color: red; margin-bottom: 10px;" placeholder="Password">
+                                                <button type="button" onclick="validateFinalPassword()" style="background-color: #eaecf0; border: 1px solid #a2a9b1; padding: 6px 12px; border-radius: 3px; cursor: pointer; font-size: 0.9em; margin-top: 5px;">Login</button>
+                                                <div id="finalPasswordV2Group" style="display: none; margin-top: 15px;">
+                                                    <label for="finalPasswordV2Answer" style="display: block; margin-bottom: 5px; font-size: 0.9em; color: purple; cursor: pointer; text-decoration: underline;" onclick="showPasswordV2Hint()">Final password v2</label>
+                                                    <input type="password" id="finalPasswordV2Answer" name="finalPasswordV2Answer" style="width: 150px; padding: 6px; border: 1px solid #a2a9b1; border-radius: 3px; font-size: 0.9em; color: purple; margin-bottom: 10px;" placeholder="Password">
+                                                    <button type="button" onclick="validateFinalPasswordV2()" style="background-color: #eaecf0; border: 1px solid #a2a9b1; padding: 6px 12px; border-radius: 3px; cursor: pointer; font-size: 0.9em; margin-top: 5px;">Login</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="main-content">
+        <div class="toc">
+            <div class="toc-title">Contents</div>
+            <ul>
+                <li><a href="#definition">1 Definition</a></li>
+                <li><a href="#roles_and_expertise">2 Roles and expertise</a>
+                    <ul>
+                        <li><a href="#design">2.1 Design</a></li>
+                        <li><a href="#analysis">2.2 Analysis</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        
+        <p><strong>An engineer is a practitioner of engineering.</strong> The word engineer (Latin ingeniator, the origin of the Ir. in the title of engineer in countries like Belgium, The Netherlands, and Indonesia) is derived from the Latin words ingeniare ("to contrive, devise") and ingenium ("cleverness"). The foundational qualifications of a licensed professional engineer typically include a four-year bachelor's degree in an engineering discipline, or in some jurisdictions, a master's degree in an engineering discipline plus four to six years of peer-reviewed professional practice (culminating in a project report or thesis) and passage of engineering board examinations.</p>
+        
+        <p>The work of engineers forms the link between scientific discoveries and their subsequent applications to human and business needs and quality of life.</p>
+        
+        <h2 id="definition">Definition<a href="#" class="edit-link">[edit]</a></h2>
+        
+        <p>In 1961, the Conference of Engineering Societies of Western Europe and the United States of America defined "professional engineer" as follows:</p>
+        
+        <blockquote>
+            <p>A professional engineer is competent by virtue of his/her fundamental education and training to apply the scientific method and outlook to the analysis and solution of engineering problems. He/she is able to assume personal responsibility for the development and application of engineering science and knowledge, notably in research, design, construction, manufacturing, superintending, managing, and in the education of the engineer. His/her work is predominantly intellectual and varied and not of a routine mental or physical character. It requires the exercise of original thought and judgment and the ability to supervise the technical and administrative work of others. His/her education will have been such as to make him/her capable of closely and continuously following progress in his/her branch of engineering science by consulting newly published works on a worldwide basis, assimilating such information, and applying it independently. He/she is thus placed in a position to make contributions to the development of engineering science or its applications. His/her education and training will have been such that he/she will have acquired a broad and general appreciation of the engineering sciences as well as thorough insight into the special features of his/her own branch. In due time he/she will be able to give authoritative technical advice and assume responsibility for the direction of important tasks in his/her branch.</p>
+        </blockquote>
+        
+        <h2 id="roles_and_expertise">Roles and expertise<a href="#" class="edit-link">[edit]</a></h2>
+        
+        <h3 id="design">Design<a href="#" class="edit-link">[edit]</a></h3>
+        
+        <p>Engineers develop new technological solutions. During the engineering design process, the responsibilities of the engineer may include defining problems, conducting and narrowing research, analyzing criteria, finding and analyzing solutions, and making decisions. Much of an engineer's time is spent on researching, locating, applying, and transferring information. Indeed, research suggests engineers spend 56% of their time engaged in various information behaviours, including 14% actively searching for information.</p>
+        
+        <p>Engineers must weigh different design choices on their merits and choose the solution that best matches the requirements and needs. Their crucial and unique task is to identify, understand, and interpret the constraints on a design in order to produce a successful result. Good problem solving skills are an important asset for engineers.</p>
+        
+        <h3 id="analysis">Analysis<a href="#" class="edit-link">[edit]</a></h3>
+        
+        <div class="analysis-image">
+            <img src="images/analysis_image.jpg" alt="Engineering analysis">
+            <div class="caption">
+                Engineers conferring on prototype design, 2025
+            </div>
+        </div>
+        
+        <p>Engineers apply techniques of engineering analysis in testing, production, or maintenance. Analytical engineers may supervise production in factories and elsewhere, determine the causes of a process failure, and test output to maintain quality. They also estimate the time and cost required to complete projects. Supervisory engineers are responsible for major components or entire projects. Engineering analysis involves the application of scientific analytic principles and processes to reveal the properties and state of the system, device or mechanism under study. Engineering analysis proceeds by separating the engineering design into the mechanisms of operation or failure, analyzing or estimating each component of the operation or failure mechanism in isolation, and recombining the components. They may analyze risk.</p>
+        
+        <p>Many engineers use computers to produce and analyze designs, to simulate and test how a machine, structure, or system operates, to generate specifications for parts, to monitor the quality of products, and to control the efficiency of processes.</p>
+    </div>
+    
+    <div class="clear"></div>
+    
+    <div class="login-form" style="margin-top: 40px; padding: 20px; background-color: #f8f9fa; border: 1px solid #a2a9b1; max-width: 400px; margin-left: auto; margin-right: auto;">
+        <h3 style="margin-top: 0; font-size: 1.2em; font-family: 'Linux Libertine', 'Georgia', 'Times', serif; font-weight: normal;">Login</h3>
+        <form id="loginForm" onsubmit="return validateLogin(event)">
+            <div style="margin-bottom: 15px;">
+                <label for="firstName" style="display: block; margin-bottom: 5px; font-size: 0.9em;">First Name:</label>
+                <input type="text" id="firstName" name="firstName" required style="width: 100%; padding: 8px; border: 1px solid #a2a9b1; border-radius: 3px; font-size: 0.9em;">
+            </div>
+            <div style="margin-bottom: 20px;">
+                <label for="password" style="display: block; margin-bottom: 5px; font-size: 0.9em; color: pink; cursor: pointer; text-decoration: underline;" onclick="highlightLetters()">Password:</label>
+                <input type="password" id="password" name="password" required style="width: 100%; padding: 8px; border: 1px solid #a2a9b1; border-radius: 3px; font-size: 0.9em; color: pink;">
+            </div>
+            <div id="password2Group" style="margin-bottom: 20px; display: none;">
+                <label for="password2" style="display: block; margin-bottom: 5px; font-size: 0.9em; color: lightblue; cursor: pointer; text-decoration: underline;" onclick="highlightLettersBlue()">Password 2:</label>
+                <input type="password" id="password2" name="password2" style="width: 100%; padding: 8px; border: 1px solid #a2a9b1; border-radius: 3px; font-size: 0.9em; color: lightblue;">
+            </div>
+            <div id="password3Group" style="margin-bottom: 20px; display: none;">
+                <label for="password3" style="display: block; margin-bottom: 5px; font-size: 0.9em; color: orange; cursor: pointer; text-decoration: underline;" onclick="highlightLettersOrange()">Password 3:</label>
+                <input type="password" id="password3" name="password3" style="width: 100%; padding: 8px; border: 1px solid #a2a9b1; border-radius: 3px; font-size: 0.9em; color: orange;">
+            </div>
+            <button type="submit" style="background-color: #eaecf0; border: 1px solid #a2a9b1; padding: 8px 16px; border-radius: 3px; cursor: pointer; font-size: 0.9em;">Login</button>
+        </form>
+    </div>
+    
+    <div id="password4Group" style="position: fixed; top: 20px; right: 20px; display: none; z-index: 1000; background-color: white; padding: 15px; border: 1px solid #a2a9b1; border-radius: 5px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+        <label for="password4" style="display: block; margin-bottom: 5px; font-size: 0.9em; color: green; cursor: pointer; text-decoration: underline;" onclick="highlightLettersGreen()">Password 4:</label>
+        <input type="password" id="password4" name="password4" style="width: 150px; padding: 6px; border: 1px solid #a2a9b1; border-radius: 3px; font-size: 0.9em; color: green; margin-bottom: 10px;">
+    </div>
+</body>
+</html>
+
+<script>
+let password5Active = false;
+let password5Correct = false;
+
+function validateLogin(event) {
+    event.preventDefault();
+    
+    const firstName = document.getElementById('firstName').value;
+    const password = document.getElementById('password').value;
+    const password2Group = document.getElementById('password2Group');
+    const password2 = document.getElementById('password2').value;
+    const password3Group = document.getElementById('password3Group');
+    const password3 = document.getElementById('password3').value;
+    
+    if (firstName === 'Polina' && password === 'divaSlay') {
+        if (password2Group.style.display === 'none') {
+            password2Group.style.display = 'block';
+            document.getElementById('password2').required = true;
+        } else if (password2 === 'geodez') {
+            if (password3Group.style.display === 'none') {
+                password3Group.style.display = 'block';
+                document.getElementById('password3').required = true;
+            } else if (password3 === 'Article') {
+                if (password5Active && password5Correct) {
+                    alert('Right login button!');
+                    document.getElementById('finalPasswordGroup').style.display = 'block';
+                } else if (password5Active) {
+                    alert('Right login button!');
+                } else {
+                    if (document.getElementById('password4Group').style.display === 'none') {
+                        document.getElementById('password4Group').style.display = 'block';
+                    } else if (password4 === 'motdepasse123') {
+                        alert('Password 4 correct! You have unlocked all levels.');
+                    } else {
+                        alert('Invalid fourth password. Please try again.');
+                    }
+                }
+            } else {
+                alert('Invalid third password. Please try again.');
+            }
+        } else {
+            alert('Invalid second password. Please try again.');
+        }
+    } else {
+        alert('Invalid credentials. Please try again.');
+    }
+}
+
+function highlightLetters() {
+    // Remove any existing highlights first
+    removeHighlights();
+    
+    // Find and highlight specific letters
+    const textNodes = getTextNodes(document.body);
+    
+    textNodes.forEach(node => {
+        const text = node.textContent;
+        const parent = node.parentNode;
+        
+        // Skip if already processed or in form elements
+        if (parent.tagName === 'FORM' || parent.tagName === 'INPUT' || parent.tagName === 'BUTTON' || parent.tagName === 'LABEL') {
+            return;
+        }
+        
+        let newHTML = text;
+        
+        // ========== EDIT YOUR LETTERS HERE ==========
+        // Just copy-paste the text from your page and wrap the letter you want highlighted
+        // Format: newHTML = newHTML.replace('original_text', 'text_with_<span style="color: pink;">letter</span>_rest');
+        
+        // EXAMPLES (you can delete these and add your own):
+        // newHTML = newHTML.replace('derived', '<span style="color: pink;">d</span>erived');
+        // newHTML = newHTML.replace('engineer', 'engin<span style="color: pink;">e</span>er');
+        
+        // ADD YOUR LETTERS BELOW THIS LINE:
+newHTML = newHTML.replace('The word engineer (Latin ingeniator, the origin of the Ir. in the title of engineer in countries like Belgium, The Netherlands, and Indonesia)', 'The wor<span style="color: #ff10f0; font-weight: bold; text-shadow: 0 0 3px #ff10f0;">d</span> engineer (Latin ingeniator, the origin of the Ir. in the title of engineer in countries like Belgium, The Netherlands, and Indonesia)');
+newHTML = newHTML.replace('The foundational qualifications of a licensed professional engineer typically include a four-year bachelor\'s degree in an engineering discipline', 'The foundational qualifications of a l<span style="color: #ff10f0; font-weight: bold; text-shadow: 0 0 3px #ff10f0;">i</span>censed professional engineer typically include a four-year bachelor\'s degree in an engineering discipline');
+newHTML = newHTML.replace('The work of engineers forms the link between scientific discoveries and their subsequent applications to human and business needs and quality of life.', 'The work of engineers forms the link between scientific disco<span style="color: #ff10f0; font-weight: bold; text-shadow: 0 0 3px #ff10f0;">v</span>eries and their subsequent applications to human and business needs and quality of life.');
+newHTML = newHTML.replace('In 1961, the Conference of Engineering Societies of Western Europe and the United States of America defined "professional engineer" as follows:', 'In 1961, the Conference of Engineering Societies of Western Europe and the United States of America defined "professional engineer" <span style="color: #ff10f0; font-weight: bold; text-shadow: 0 0 3px #ff10f0;">a</span>s follows:');
+newHTML = newHTML.replace('He/she is able to assume personal responsibility for the development and application of engineering science and knowledge', 'He/she is able to assume personal responsibility for the development and application of engineering <span style="color: #ff10f0; font-weight: bold; text-shadow: 0 0 3px #ff10f0;">S</span>cience and knowledge');
+newHTML = newHTML.replace('It requires the exercise of original thought and judgment and the ability to supervise the technical', 'It requires the exercise of original thought and judgment and the abi<span style="color: #ff10f0; font-weight: bold; text-shadow: 0 0 3px #ff10f0;">l</span>ity to supervise the technical');
+newHTML = newHTML.replace('His/her education will have been such as to make him/her capable of closely and continuously following progress in his/her branch of engineering science by consulting newly published', 'His/her education will have been such <span style="color: #ff10f0; font-weight: bold; text-shadow: 0 0 3px #ff10f0;">a</span>s to make him/her capable of closely and continuously following progress in his/her branch of engineering science by consulting newly published');
+newHTML = newHTML.replace('During the engineering design process, the responsibilities of the engineer may include defining problems', 'During the engineering design process, the responsibilities of the engineer ma<span style="color: #ff10f0; font-weight: bold; text-shadow: 0 0 3px #ff10f0;">y</span> include defining problems');
+        
+        
+        // ==========================================
+        
+        if (newHTML !== text) {
+            const wrapper = document.createElement('span');
+            wrapper.innerHTML = newHTML;
+            parent.replaceChild(wrapper, node);
+        }
+    });
+}
+
+function highlightLettersBlue() {
+    // Remove any existing highlights first
+    removeHighlights();
+    
+    // Find and highlight specific letters with neon blue
+    const textNodes = getTextNodes(document.body);
+    
+    textNodes.forEach(node => {
+        const text = node.textContent;
+        const parent = node.parentNode;
+        
+        // Skip if already processed or in form elements
+        if (parent.tagName === 'FORM' || parent.tagName === 'INPUT' || parent.tagName === 'BUTTON' || parent.tagName === 'LABEL') {
+            return;
+        }
+        
+        let newHTML = text;
+        
+        // ========== EDIT YOUR LETTERS HERE FOR NEON BLUE ==========
+        // Just copy-paste the text from your page and wrap the letter you want highlighted
+        // Format: newHTML = newHTML.replace('original_text', 'text_with_<span style="color: #00ffff;">letter</span>_rest');
+        
+        // ADD YOUR LETTERS BELOW THIS LINE:
+        newHTML = newHTML.replace('An engineer is a practitioner of engineering.', 'An en<span style="color: #00ffff; font-weight: bold; text-shadow: 0 0 3px #00ffff;">g</span>ineer is a practitioner of engineering.');
+        newHTML = newHTML.replace('The work of engineers forms the link between scientific discoveries and their subsequent applications to human and business needs and quality of life.', 'The work of <span style="color: #00ffff; font-weight: bold; text-shadow: 0 0 3px #00ffff;">e</span>ngineers forms the link between scientific discoveries and their subsequent applications to human and business needs and quality of life.');
+        newHTML = newHTML.replace('In 1961, the Conference of Engineering Societies of Western Europe and the United States of America defined "professional engineer" as follows:', 'In 1961, the Conference of Engineering Societies of Western Europe and the United States of America defined "pr<span style="color: #00ffff; font-weight: bold; text-shadow: 0 0 3px #00ffff;">o</span>fessional engineer" as follows:');
+        newHTML = newHTML.replace('It requires the exercise of original thought and judgment and the ability to supervise the technical and administrative work of others', 'It requires the exercise of original thought and judgment and the ability to supervise the technical an<span style="color: #00ffff; font-weight: bold; text-shadow: 0 0 3px #00ffff;">d</span> administrative work of others');
+        newHTML = newHTML.replace('Analytical engineers may supervise production in factories and elsewhere, determine the causes of a process failure, and test output to maintain quality.', 'Analytical engineers may sup<span style="color: #00ffff; font-weight: bold; text-shadow: 0 0 3px #00ffff;">e</span>rvise production in factories and elsewhere, determine the causes of a process failure, and test output to maintain quality.');
+        newHTML = newHTML.replace('They may analyze risk.', 'They may anal<span style="color: #00ffff; font-weight: bold; text-shadow: 0 0 3px #00ffff;">z</span>e risk.');
+        
+        // ==========================================
+        
+        if (newHTML !== text) {
+            const wrapper = document.createElement('span');
+            wrapper.innerHTML = newHTML;
+            parent.replaceChild(wrapper, node);
+        }
+    });
+}
+
+function removeHighlights() {
+    // Remove neon pink highlight spans
+    const pinkSpans = document.querySelectorAll('span[style*="color: #ff10f0"]');
+    pinkSpans.forEach(span => {
+        const parent = span.parentNode;
+        parent.replaceChild(document.createTextNode(span.textContent), span);
+        parent.normalize();
+    });
+    
+    // Remove neon blue highlight spans
+    const blueSpans = document.querySelectorAll('span[style*="color: #00ffff"]');
+    blueSpans.forEach(span => {
+        const parent = span.parentNode;
+        parent.replaceChild(document.createTextNode(span.textContent), span);
+        parent.normalize();
+    });
+    
+    // Remove neon orange highlight spans
+    const orangeSpans = document.querySelectorAll('span[style*="color: #ff8800"]');
+    orangeSpans.forEach(span => {
+        const parent = span.parentNode;
+        parent.replaceChild(document.createTextNode(span.textContent), span);
+        parent.normalize();
+    });
+    
+    // Remove neon green highlight spans
+    const greenSpans = document.querySelectorAll('span[style*="color: #00ff00"]');
+    greenSpans.forEach(span => {
+        const parent = span.parentNode;
+        parent.replaceChild(document.createTextNode(span.textContent), span);
+        parent.normalize();
+    });
+    
+    // Remove neon red highlight spans
+    const redSpans = document.querySelectorAll('span[style*="color: #ff0000"]');
+    redSpans.forEach(span => {
+        const parent = span.parentNode;
+        parent.replaceChild(document.createTextNode(span.textContent), span);
+        parent.normalize();
+    });
+    
+    // Remove neon purple highlight spans
+    const purpleSpans = document.querySelectorAll('span[style*="color: #ff00ff"]');
+    purpleSpans.forEach(span => {
+        const parent = span.parentNode;
+        parent.replaceChild(document.createTextNode(span.textContent), span);
+        parent.normalize();
+    });
+}
+
+function highlightLettersOrange() {
+    // Remove any existing highlights first
+    removeHighlights();
+    
+    // Find and highlight specific letters with neon orange
+    const textNodes = getTextNodes(document.body);
+    
+    textNodes.forEach(node => {
+        const text = node.textContent;
+        const parent = node.parentNode;
+        
+        // Skip if already processed or in form elements
+        if (parent.tagName === 'FORM' || parent.tagName === 'INPUT' || parent.tagName === 'BUTTON' || parent.tagName === 'LABEL') {
+            return;
+        }
+        
+        let newHTML = text;
+        
+        // ========== EDIT YOUR LETTERS HERE FOR NEON ORANGE ==========
+        // Just copy-paste the text from your page and wrap the letter you want highlighted
+        // Format: newHTML = newHTML.replace('original_text', 'text_with_<span style="color: #ff8800;">letter</span>_rest');
+        
+        // ADD YOUR LETTERS BELOW THIS LINE:
+        newHTML = newHTML.replace('Article', '<span style="color: #ff8800; font-weight: bold; text-shadow: 0 0 3px #ff8800;">Article</span>');
+        
+        // ==========================================
+        
+        if (newHTML !== text) {
+            const wrapper = document.createElement('span');
+            wrapper.innerHTML = newHTML;
+            parent.replaceChild(wrapper, node);
+        }
+    });
+}
+
+function highlightLettersGreen() {
+    // Remove any existing highlights first
+    removeHighlights();
+    
+    // Find and highlight specific letters with neon green
+    const textNodes = getTextNodes(document.body);
+    
+    textNodes.forEach(node => {
+        const text = node.textContent;
+        const parent = node.parentNode;
+        
+        // Skip if already processed or in form elements
+        if (parent.tagName === 'FORM' || parent.tagName === 'INPUT' || parent.tagName === 'BUTTON' || parent.tagName === 'LABEL') {
+            return;
+        }
+        
+        let newHTML = text;
+        
+        // ========== EDIT YOUR LETTERS HERE FOR NEON GREEN ==========
+        // Just copy-paste the text from your page and wrap the letter you want highlighted
+        // Format: newHTML = newHTML.replace('original_text', 'text_with_<span style="color: #00ff00;">letter</span>_rest');
+        
+        // ADD YOUR LETTERS BELOW THIS LINE:
+        
+        // ==========================================
+        
+        if (newHTML !== text) {
+            const wrapper = document.createElement('span');
+            wrapper.innerHTML = newHTML;
+            parent.replaceChild(wrapper, node);
+        }
+    });
+}
+
+function highlightLettersRed() {
+    // Remove any existing highlights first
+    removeHighlights();
+    
+    // Find and highlight specific letters with neon red
+    const textNodes = getTextNodes(document.body);
+    
+    textNodes.forEach(node => {
+        const text = node.textContent;
+        const parent = node.parentNode;
+        
+        // Skip if already processed or in form elements
+        if (parent.tagName === 'FORM' || parent.tagName === 'INPUT' || parent.tagName === 'BUTTON' || parent.tagName === 'LABEL') {
+            return;
+        }
+        
+        let newHTML = text;
+        
+        // ========== EDIT YOUR LETTERS HERE FOR NEON RED ==========
+        // Just copy-paste the text from your page and wrap the letter you want highlighted
+        // Format: newHTML = newHTML.replace('original_text', 'text_with_<span style="color: #ff0000;">letter</span>_rest');
+        
+        // ADD YOUR LETTERS BELOW THIS LINE:
+        newHTML = newHTML.replace('An engineer is a practitioner of engineering', '<span style="color: #ff0000; font-weight: bold; text-shadow: 0 0 3px #ff0000;">A</span>n engineer is a practitioner of engineering');
+        newHTML = newHTML.replace('The work of engineers forms the link between scientific discoveries and their subsequent applications to human and business needs and quality of life.', 'The work of e<span style="color: #ff0000; font-weight: bold; text-shadow: 0 0 3px #ff0000;">n</span>gineers forms the link between scientific discoveries and their subsequent applications to human and business needs and quality of life.');
+        newHTML = newHTML.replace('defined "professional engineer" as follows:', 'defined "professio<span style="color: #ff0000; font-weight: bold; text-shadow: 0 0 3px #ff0000;">n</span>al engineer" as follows:');
+        newHTML = newHTML.replace('competent by virtue of his/her', 'competent by v<span style="color: #ff0000; font-weight: bold; text-shadow: 0 0 3px #ff0000;">i</span>rtue of his/her');
+        newHTML = newHTML.replace('administrative work of others', 'administrative wor<span style="color: #ff0000; font-weight: bold; text-shadow: 0 0 3px #ff0000;">k</span> of others');
+        newHTML = newHTML.replace('Roles and expertise<a href="#" class="edit-link">[edit]</a>', 'Roles <span style="color: #ff0000; font-weight: bold; text-shadow: 0 0 3px #ff0000;">a</span>nd expertise<a href="#" class="edit-link">[edit]</a>');
+        newHTML = newHTML.replace('various information behaviours', '<span style="color: #ff0000; font-weight: bold; text-shadow: 0 0 3px #ff0000;">V</span>arious information behaviours');
+        newHTML = newHTML.replace('problem solving skills', 'problem s<span style="color: #ff0000; font-weight: bold; text-shadow: 0 0 3px #ff0000;">o</span>lving skills');
+        newHTML = newHTML.replace('time and cost required to complete projects', 'time and cost required to comp<span style="color: #ff0000; font-weight: bold; text-shadow: 0 0 3px #ff0000;">l</span>ete projects');
+        newHTML = newHTML.replace('engineers use computers', 'engineers use compu<span style="color: #ff0000; font-weight: bold; text-shadow: 0 0 3px #ff0000;">t</span>ers');
+        newHTML = newHTML.replace('placed in a position to make contributions', 'placed in <span style="color: #ff0000; font-weight: bold; text-shadow: 0 0 3px #ff0000;">a</span> position to make contributions');
+        
+        // ==========================================
+        
+        if (newHTML !== text) {
+            const wrapper = document.createElement('span');
+            wrapper.innerHTML = newHTML;
+            parent.replaceChild(wrapper, node);
+        }
+    });
+}
+
+function highlightLettersPurple() {
+    // Remove any existing highlights first
+    removeHighlights();
+    
+    // Find and highlight specific letters with neon purple
+    const textNodes = getTextNodes(document.body);
+    
+    textNodes.forEach(node => {
+        const text = node.textContent;
+        const parent = node.parentNode;
+        
+        // Skip if already processed or in form elements
+        if (parent.tagName === 'FORM' || parent.tagName === 'INPUT' || parent.tagName === 'BUTTON' || parent.tagName === 'LABEL') {
+            return;
+        }
+        
+        let newHTML = text;
+        
+        // ========== EDIT YOUR LETTERS HERE FOR NEON PURPLE ==========
+        // Just copy-paste the text from your page and wrap the letter you want highlighted
+        // Format: newHTML = newHTML.replace('original_text', 'text_with_<span style="color: #ff00ff;">letter</span>_rest');
+        
+        // ADD YOUR LETTERS BELOW THIS LINE:
+        
+        // ==========================================
+        
+        if (newHTML !== text) {
+            const wrapper = document.createElement('span');
+            wrapper.innerHTML = newHTML;
+            parent.replaceChild(wrapper, node);
+        }
+    });
+}
+
+function validatePassword4() {
+    const password4 = document.getElementById('password4').value;
+    
+    if (password4 === 'motdepasse123') {
+        if (password5Active) {
+            alert('WWRRRRONNG!!!!');
+        } else {
+            document.getElementById('dobGroup').style.display = 'block';
+        }
+    } else {
+        alert('Invalid fourth password. Please try again.');
+    }
+}
+
+function validateDOB() {
+    const dob = document.getElementById('dob').value;
+    
+    if (dob === '2006-01-19') {
+        document.getElementById('password5Group').style.display = 'block';
+    } else {
+        alert('Invalid credentials. Please try again.');
+    }
+}
+
+function validateCatsOrDogs() {
+    const answer = (document.getElementById('catsOrDogs').value || '').trim().toLowerCase();
+    if (answer === 'cats') {
+        const input = document.getElementById('catsOrDogs');
+        const rect = input.getBoundingClientRect();
+
+        let container = document.getElementById('dogImageContainer');
+        let img = document.getElementById('dogImage');
+        let caption = document.getElementById('dogImageCaption');
+
+        if (!container) {
+            container = document.createElement('div');
+            container.id = 'dogImageContainer';
+
+            img = document.createElement('img');
+            img.id = 'dogImage';
+            img.alt = 'Pet image';
+
+            caption = document.createElement('div');
+            caption.id = 'dogImageCaption';
+
+            container.appendChild(img);
+            container.appendChild(caption);
+            document.body.appendChild(container);
+        }
+
+        img.dataset.fallbackTried = '';
+        img.onerror = function () {
+            if (this.dataset.fallbackTried) return;
+            this.dataset.fallbackTried = '1';
+            this.src = 'images/catimage.jpg';
+        };
+        img.src = 'catimage.jpg';
+        caption.textContent = 'Suss is watching, lock in twin!';
+
+        container.style.position = 'fixed';
+        container.style.left = '10px';
+        container.style.top = rect.top + 'px';
+        container.style.zIndex = '9999';
+        container.style.display = 'block';
+
+        img.style.maxWidth = '200px';
+        img.style.height = 'auto';
+        img.style.display = 'block';
+
+        caption.style.marginTop = '6px';
+        caption.style.fontSize = '14px';
+        caption.style.color = '#000';
+        caption.style.maxWidth = '200px';
+        document.getElementById('onePlusOneGroup').style.display = 'block';
+        return;
+    } else if (answer === 'dogs') {
+        const input = document.getElementById('catsOrDogs');
+        const rect = input.getBoundingClientRect();
+
+        let container = document.getElementById('dogImageContainer');
+        let img = document.getElementById('dogImage');
+        let caption = document.getElementById('dogImageCaption');
+
+        if (!container) {
+            container = document.createElement('div');
+            container.id = 'dogImageContainer';
+
+            img = document.createElement('img');
+            img.id = 'dogImage';
+            img.alt = 'Pet image';
+
+            caption = document.createElement('div');
+            caption.id = 'dogImageCaption';
+
+            container.appendChild(img);
+            container.appendChild(caption);
+            document.body.appendChild(container);
+        }
+
+        img.dataset.fallbackTried = '';
+        img.onerror = function () {
+            if (this.dataset.fallbackTried) return;
+            this.dataset.fallbackTried = '1';
+            this.src = 'images/dogimage.jpg';
+        };
+        img.src = 'dogimage.jpg';
+        caption.textContent = "Petškin is watching, lock in twin!";
+
+        container.style.position = 'fixed';
+        container.style.left = '10px';
+        container.style.top = rect.top + 'px';
+        container.style.zIndex = '9999';
+        container.style.display = 'block';
+
+        img.style.maxWidth = '200px';
+        img.style.height = 'auto';
+        img.style.display = 'block';
+
+        caption.style.marginTop = '6px';
+        caption.style.fontSize = '14px';
+        caption.style.color = '#000';
+        caption.style.maxWidth = '200px';
+        document.getElementById('onePlusOneGroup').style.display = 'block';
+        return;
+    } else {
+        alert('Invalid credentials. Please try again.');
+    }
+}
+
+function validateOnePlusOne() {
+    const answer = (document.getElementById('onePlusOne').value || '').trim();
+    if (answer === '2') {
+        document.getElementById('mathImageGroup').style.display = 'block';
+        return;
+    } else {
+        alert('Invalid credentials. Please try again.');
+    }
+}
+
+function validateMathImage() {
+    const answer = (document.getElementById('mathImageAnswer').value || '').trim();
+    if (answer === '17.6') {
+        document.getElementById('killingCurseGroup').style.display = 'block';
+        return;
+    } else {
+        alert('Kasuta punkti, mitte koma: . mitte , ');
+    }
+}
+
+function validateKillingCurse() {
+    const answer = (document.getElementById('killingCurse').value || '').trim();
+    if (answer === 'avadakedavra') {
+        document.getElementById('presidentQuestionGroup').style.display = 'block';
+        return;
+    } else {
+        alert('get pranked noob: kõik väiksed tähed, kokku kirjutatud');
+    }
+}
+
+function validatePresidentQuestion() {
+    const answer = (document.getElementById('presidentAnswer').value || '').trim();
+    if (answer === 'Arnold Rüütel') {
+        document.getElementById('turningHeadQuestionGroup').style.display = 'block';
+        return;
+    } else {
+        alert('Incorrect answer. Please try again.');
+    }
+}
+
+function validateTurningHeadQuestion() {
+    document.getElementById('hamiltonQuestionGroup').style.display = 'block';
+    return;
+}
+
+function validateHamiltonQuestion() {
+    const answer = (document.getElementById('hamiltonAnswer').value || '').trim();
+    if (answer === 'Aaron Burr') {
+        document.getElementById('password5QuestionGroup').style.display = 'block';
+        return;
+    } else {
+        alert('Incorrect answer. Please try again.');
+    }
+}
+
+function validatePassword5Question() {
+    const answer = (document.getElementById('password5Answer').value || '').trim();
+    if (answer === 'salasona12') {
+        password5Active = true;
+        password5Correct = true;
+        document.getElementById('password5Arrow').style.display = 'inline';
+        alert('Wrong login button, fool!');
+        return;
+    } else {
+        alert('Incorrect password. Please try again.');
+    }
+}
+
+function validateFinalPassword() {
+    const answer = (document.getElementById('finalPasswordAnswer').value || '').trim();
+    if (answer === 'AnnikaVolt') {
+        document.getElementById('finalPasswordV2Group').style.display = 'block';
+        return;
+    } else {
+        alert('Incorrect final password. Please try again.');
+        return;
+    }
+}
+
+function showPasswordV2Hint() {
+    // Show hint under the password box only if it doesn't exist yet
+    const hintDiv = document.getElementById('finalPasswordV2Hint');
+    if (!hintDiv) {
+        const newHint = document.createElement('div');
+        newHint.id = 'finalPasswordV2Hint';
+        newHint.style.color = 'purple';
+        newHint.style.fontSize = '0.8em';
+        newHint.style.marginTop = '5px';
+        newHint.innerHTML = 'Hint: .--- .- .-. --. -- .. -. . / .--. .- . ...- / --- .-.. .. / -- .- .- .-. .- - ..- -.. / ..- ..- . / -.- --- -.. ..- --. .- / - ..- - ...- ..- -- .. ... . -.- ... .-.-.- / ... .- ..- -. .- - .- -.. .. / .--. .. -.. .. / - ..- -... .- ... . / - .- .-.. .. - ..- ... . / . . ... - / -- ..- .-. . - ... . -- .- --..-- / -. .- --. ..- / - .- / ... . -.. .- / --- .-.. .. / - . .. -. ..- -.. / .--- ..- -... .- / -. .. .. / -- --- -. .. --. .. / .--. .- . ...- / . -. -. . / -. --- --- .-. . / .--. . .-. . -. .- .. ... . / ... .- .- -... ..- -- .. ... - .-.-.- / -- .- -.. .. ... / .--. .. -.. .. / .--. . .-. . .-. .- .... ...- .- --. .- / -.- .- .- ... .- / -- .. -. . -- .- / -. .- --. ..- / --- -- .- / .. -. .. -- . -. . --..-- / -.- . ... / -.- --- .. -.- / - . .- -... / .--- .- / -.- --- .. --. . / -.- --- .... - .- / --- ... -.- .- -... / ... . .-.. . - ..- ... - / .- -. -.. .- .-.-.- / .... --- -- -- .. -.- ..- .-.. / -- --- - .-.. . ... .. -.. / ..- ..- ... / .--. . .-. . -- . . ... / .--- .- / .--. . .-. . -. .- .. -. . / -.- --- .. --. . .--. . .- .-.. - / -- .. -. -. .- / ..- .-.. . .- . -.. ... . .. -.. / ...- .- .- - .- -- .- .-.-.- / . - / .- --. .- / ... .- ..- -. .- .-. .- .... ...- .- ... / -.- .. -. -. .. - .- ... --..-- / - .- --. .- .--. . .-. . / .--. . .- .-. ..- / --- .-.. . ...- .- - / -.- --- -.. ..- -. - / .- .-. .- --..-- / ...- .. ... - .. ... - .. / -.- --- .-. - ... .. ... --..-- / -.- ..- ... / - .- / .. ... . --. .. / --- --- -.. / ... .- -.- ... .- - --- .- ... / -- --- --- -.. .- / ... .- .- - ...- .- - --..-- / ... .. .. ... / .-.. ..- -.- .- - .. / ... . . / -.- ..- .-.. .- ... -.- .- .. -.- / . -.. .- ... .. / .--- .- / - .- .... . - .. / -- .. -. -. .- / -.- --- .... . / .--. .. .. .-. . / ...- .- .- - .- -- .- .-.-.- / .- -. -.. .-. . ... / --- .-.. .. / -.- ..- .-.. .-.. / --- -- .- .-.. / .- .--- .- .-.. / -.- --- --. ..- / -- .- .- -....- .- .-.. .- / .-.. .- -... .. / -.- .- .. -. ..- -.. --..-- / .- --. .- / ... .. .. ... / --- .-.. .. / -- .- .- .--. .. -. -.. / -.- ..- .-.. -- ..- -. ..- -.. / .--- .- / --- .... ..- -.- . ... . / .-.. ..- -- . -.- .. .-. -- . - .. ... . / .- .-.. .-.. --..-- / -. .. .. / . - / - . -- .- / ..- .-.. . / .--. . .- .- ... .--- .- .-.. .. -.- ..- .-.. - / -.- .- ..- -.. ... . - . / - ..- -. -. ..- ... - . / .- -... .. .-.. / .--. .. -.. .. / --- - ... ..- ... - .- -- .- .-.-.- / .--. . .-. . -. .- .. ... . .-.. . / --- .-.. .. / -- ..- .. -.. ..- --. .. / -.- --- .. -.- / ...- --- .... .. ...- --- --- .-. .- ... / .--- .- / - ..- .-.. .. ..- ..- ... .-.-.- / - . . -.- --- -. -. .- -.- ... / - --- -- -... .- ... / .--. . .-. . -. .- .. -. . / ...- .- -. .- -.. / ... ..- -.- .- -.. / .--- .- .-.. --. .- / .--- .- / .--. .. ... - .. ... / - ..- .-.. .. ..- ..- . -.. / --- -- .- - . .... - ..- -.. / ...- .. .. ... ..- -.. / --- - ... .- .-.-.- / -. . . -.. / --- .-.. .. / - .- / .. ... .- -.- --- -.. ..- ... - / -.- .- .- ... .- / - --- --- -. ..- -.. .-.-.- / .--. . .-. . -- . . ... / .--. .- -. .. / . -. -.. .- .-.. . / -. .- .-. - ... ..- -.. / .--- .- / .-. .- .- --. -. .- .... -.- .- / .--. .- ... - .-.. .- -.. .-.-.- / ... .- ..- -. .- -....- -- .- -.. .. ... / --- - ... ..- ... - .- ... / .--. .- .-.. .--- .- / .--- .- .-.. ..- / -- .. -. -. .- --..-- / ... . ... - / .--. .- .. -.- . / --- .-.. .. / .--- ..- -... .- / -.- --- .-. --. . .-.. / .--- .- / .--. .- .. ... - .. ... / .... . .-.. . -.. .- ... - .. / -.- . ...- .- -.. .. ... . ... - / - .- . ...- .- ... - .-.-.- / --- .-.. .. / -. .. .. / .. -- . .-.. .. ... . .-.. - / -.- . .-. --. . / .--- .- / ... . .-.. --. . / - .- -. .- / ... .. .. -. / ...- .- .-.. .--- .- -- .- . .-.. --..-- / -.- ..- .... ..- / .--. .- .. ... - ... .. -.. / -. .. .. / .--. .- .-.. .--- ..- -.. / ... .- -- .- ... ..- --. ..- ... . -.. / .. -- . .-.. .. ... . .-.. - / -.- . .-. --. . / .--- .- / ... . .-.. --. . / --- .... ..- --. .- / ..- -- -... .-. .. - ... . - ..- -.. / ...- .- .-.. .--- .- -- .- . -.. / -.- . ... . - / --- - ... .- - ..- - / ... --- --- -.. / .--- .- / .-. .- -... .- .-.-.- / -. . -. -.. . / -.- --- .... .- .-.. / .-.. . -. -.. .- ... .. -.. / .... . .-.. . ...- .- .-.. --. . -.. / .--. .. .-.. ...- . -.. / -. .- --. ..- / .... .. .-. -- ..- -. ..- -.. / .-.. .- --. .-.. . -.. .-.-.- / .- .. -. ..- .-.. - / .... .- .- .-.. - / . .. / - . .. -. ..- -.. / -. .- -.. .-.-.- / - .- . ...- .- .- .-.. ..- -. . / --- .-.. .. / .... --- --- .--. .. ... / ...- .- .. -.- -. . --..-- / -.- ..- .. / . .. / .--. .- -. -. ..- -.. / - .- .... . .-.. . / .-.. --- --- -.- . ... - . / .-.. .- ..- .-.. ..- / .--- .- / .-.. .. -. .- ...- .- ... - .-. .. -.- -.- ..- / -.- .- - ..- ... . .... .- .-. .--- .- .-.. / ...- --- .. / .- .. .- - . .. -... .- ... .-.-.- / - ..- -. -.. .. -.. . / -.- .- ..- .--. .- / ... ..- -- .- - .. / ... --- --- ... / .--- .- / ...- . . ... --..-- / -- .. ... / .--. .- .. --. ..- - .. / .-.. .- ..- ... .- / ... --- .-.. .. ... . ... --..-- / .--. .- .. --. ..- - .. / ... .- ..- -. .- -....- -- .- -.. .. ... . / ...- .- .-. ...- .- ... - . / ...- .- .... . .-.. / .- .. -. ..- .-.. - / ...- .. .-. - ... ..- ... .-.-.- / .- .. -. ..- .-.. - / ...- .- .. -.- . ... . .-.. / .... .- .-.. .-.. .. -.- .. ...- .. -- .- . .-.. / .--- .- / .--- --- . ... ... .- .- .-. . .-.. / --- .-.. .. / .--. .- .-. .. ... / -.- ..- .. ...- .-.-.- / ...- .. .. -- .- ... . .-.. / --- .-.. .. / -- .. .-.. .-.. .- .-.. --. .. / .--. --- .-.. -.. ..- / .... .- .-. .. - ..- -.. --..-- / .- --. .- / ... .- ..- -. .- -- .- -.. .. ... . .-.. / .--. ..- ..- -.. ..- ... .. -.. / - . .- - . -.. --..-- / -- .. .-.. .-.. .- .-.. / ... . . / --- .-.. .. / - --- .. -- ..- -. ..- -.. .-.-.- / ... . .-.. . - ..- ... . -.- ... / ..- - .-.. . ... / - .- / .- .. -. ..- .-.. - ---... / ... . . / .--. .. -.. .. / -.- ..- .-.. .-.. / ...- .- --. .- / .- -- -- ..- / --- .-.. . -- .- --..-- / ... . ... - / ...- .- .-. ... - .. / --- -. / .--. --- .-.. .-.. ..- / .- ... . -- . .-.. / ..- ..- . ... - .. / -- . - ... .-.-.- / ... . . / .- .-.. .- .-.. .... --- .. -.. ..- -. ..- -.. / .--. --- .-.. .-.. ..- .-.. .- .--. .--. / ... .. .. -. / -.- .- ..- --. . .-.. / ... --- --- ... .- .- .-. . .-.. / -- --- .--- ..- ... / -.- ..- .. / -- ..- .. -. .- ... .--- ..- - - .-.-.- / - .- / - . -.- .. - .- ... / .. -- . .-.. .. -.- ..- .-.. - / --- -- .- .--. .- .-. .- ... . / .--- .- / -.- --- -.. ..- ... . / - ..- -. -.. -- ..- ... . .-.-.- / ... . ... - / ... . .-.. . - .- -- .- - .- --. .. / --- .-.. .. / .- -.- -.- .. / -.- --- .. --. .. .-.. / ... . .-.. --. . --..-- / . - / -- .. .-.. .-.. .- .-.. --. .. / --- -. / ... .. .. -. / .. -. .. -- . -. . / .-.. .. .. -.- ..- -. ..- -.. --..-- / - . --. ..- - ... . -. ..- -.. --..-- / -- --- - . .-.. -. ..- -.. .-.-.- / -- .. .-.. .-.. .- .-.. --. .. / --- .-.. .. -.. / ... . .-.. .-.. . / ... --- --- - .. .--- .- .- -. ..- -.. / .--. --- .-.. .-.. ..- .-.. .- .--. .. --. .- / ... . --- - ..- -.. / .. -. .. -- . ... . / .-. --- --- -- ..- -.. / .--- .- / -- ..- .-. . -.. .-.-.- / .--. ..- .... .- - .. / .--- .- .-.. --. ..- / .--- .- / .--. .- -. -.. .. / .--. .. .. .--. ..- .-.-.- / .--- ..- -... .- / .-.. .- -... .. -.- .- .. -.. ..- -.. / -- .- .- / .--- .- .-. --. .. / --- - ... ..- ... - .- -.. . ... / --- .-.. .. / -.- .-. ..- -. - .. / -.- ..- .-.. .-.. / .--- .- / -.- ..- .-.. .-.. --..-- / -. .- --. ..- / .-.. .. .. --. .- --. .. / .--. .- .-.. .--- ..- --..-- / .- .-. ...- ..- / .--. --- --- .-.. . ... - / ..- .-.. . / .--. --- --- .-.. - . .. ... . ... .- .--- .- / - .. .. -. ..- .-.-.- / .- --. .- / ... ..- ..- .-. . -- / --- ... .- / ... . .-.. .-.. . ... - / --- .-.. .. / -.- .- ... / .-. --- .... ..- ... --- / --- / ...- --- .. / ... .- -- -... .-.. .- .-. .- -... .- / -- .- -. -. .. .--- .- ... ... .. -.. . --. .- .-.-.- / ... .. -. ..- / ... .- .-.. .- ... --- -. .- / --- -. / -.- .- .-.. .- -.- . .---- ..--- ...-- / ... . . / --- -. / ... ..- ..- / ...- .. .. -- .- -. . / ... .- .-.. .- ... --- -. .- / .... . .. -. .- -- .- .- --. .. / --- .-.. .. / . -. .- -- .- ... - .. / -.- .- ... / .-. .- -... .- ... . .-. ...- --..-- / ... --- --- -. . .--. . .- .-.. -. . --..-- / ...- .- . ...- .- -.- .- ... . ... --- --- / ...- --- .. / -.- .. .. -.- ..- ...- / .--- --- . .- .- .-. -. . --..-- / -.- ..- ... / .--. .-. .- . --. ..- / .-.. .- .. -. . - .- ... / .- .-.. .-.. . ... / . .-.. ..- ... / ...- . ... .. --..-- / -. .. .. / . - / .- .. -. ..- .-.. - / .--. .- .. --. ..- - .. / - .- .-.. .-.. . / .-.. .. --. .. / .--. .- .- ... . ... .-.-.- / -.- . ...- .- -.. .. - .. / ... ..- ..- .-. ...- . . --. .- / .--- .- / ... ..- --. .. ... . ...- .. .... -- .- -.. . / .- .--- .- .-.. / .--. .. -.. .. / ... .. .. -. / -.- ..- .-.. .-.. / --- - ... . / .--- .- .-. ...- . .--. . .- .-.. .. ... - / --- .-.. . - .- -- .- .-.-.- / .- .-. ..- .... . .. -. .- -- .- .- -.. / --- .-.. .. -.. / -.- --- -.. ..- -- .- .. .-.. / ...- .- .. -.- . / .-.. .- .--. .. -.- . .-.-.-';
+        document.getElementById('finalPasswordV2Answer').parentNode.appendChild(newHint);
+    }
+}
+
+function validateFinalPasswordV2() {
+    const answer = (document.getElementById('finalPasswordV2Answer').value || '').trim();
+    
+    if (answer === 'kalake123') {
+        // Hide the original login button and show the message
+        const loginButton = document.querySelector('#finalPasswordV2Group button');
+        loginButton.style.display = 'none';
+        
+        // Create and show the message
+        const message = document.createElement('div');
+        message.style.color = 'red';
+        message.style.fontWeight = 'bold';
+        message.style.marginTop = '10px';
+        message.innerHTML = 'login nupp pani jooksu lol. Huj leiad selle';
+        loginButton.parentNode.appendChild(message);
+        
+        // Create new login button at bottom left (stationary)
+        const newLoginButton = document.createElement('button');
+        newLoginButton.innerHTML = 'Login';
+        newLoginButton.style.position = 'absolute';
+        newLoginButton.style.bottom = '20px';
+        newLoginButton.style.left = '20px';
+        newLoginButton.style.backgroundColor = '#eaecf0';
+        newLoginButton.style.border = '1px solid #a2a9b1';
+        newLoginButton.style.padding = '10px 20px';
+        newLoginButton.style.borderRadius = '5px';
+        newLoginButton.style.cursor = 'pointer';
+        newLoginButton.style.fontSize = '0.9em';
+        newLoginButton.onclick = function() {
+            window.location.href = 'next.html';
+        };
+        document.body.appendChild(newLoginButton);
+        
+        return;
+    } else if (answer !== '') {
+        alert('Incorrect final password v2. Please try again.');
+        return;
+    }
+}
+
+function getTextNodes(element) {
+    const textNodes = [];
+    const walker = document.createTreeWalker(
+        element,
+        NodeFilter.SHOW_TEXT,
+        null,
+        false
+    );
+    
+    let node;
+    while (node = walker.nextNode()) {
+        if (node.textContent.trim() !== '') {
+            textNodes.push(node);
+        }
+    }
+    
+    return textNodes;
+}
+</script>

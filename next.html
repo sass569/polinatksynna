@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="et">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Läbipääs</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: linear-gradient(135deg, #ffeaa7 0%, #fd79a8 50%, #e84393 100%);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 40px 20px;
+            color: #2d3436;
+        }
+
+        .container {
+            max-width: 800px;
+            width: 100%;
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(10px);
+        }
+
+        .title {
+            text-align: center;
+            font-size: 2.5em;
+            font-weight: 700;
+            color: #e84393;
+            margin-bottom: 30px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .message {
+            font-size: 1.1em;
+            line-height: 1.8;
+            color: #2d3436;
+            text-align: center;
+            margin-bottom: 40px;
+            background: linear-gradient(135deg, #fab1a0 0%, #ff7675 100%);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-weight: 500;
+        }
+
+        .audio-section {
+            margin-top: 40px;
+        }
+
+        .audio-title {
+            text-align: center;
+            font-size: 1.5em;
+            color: #e84393;
+            margin-bottom: 30px;
+            font-weight: 600;
+        }
+
+        .audio-grid {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            margin-bottom: 40px;
+        }
+
+        .audio-player {
+            background: linear-gradient(135deg, #ff9ff3 0%, #feca57 100%);
+            border-radius: 12px;
+            padding: 20px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .audio-player:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+        }
+
+        .audio-player h3 {
+            color: #2d3436;
+            font-size: 1.2em;
+            margin-bottom: 15px;
+            font-weight: 600;
+        }
+
+        .audio-controls {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .play-button {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: #2d3436;
+            border: none;
+            color: white;
+            font-size: 18px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+        }
+
+        .play-button:hover {
+            background: #e84393;
+            transform: scale(1.1);
+        }
+
+        .play-button.playing {
+            background: #00b894;
+        }
+
+        .progress-container {
+            flex: 1;
+            height: 6px;
+            background: rgba(255, 255, 255, 0.3);
+            border-radius: 3px;
+            cursor: pointer;
+            position: relative;
+        }
+
+        .progress-bar {
+            height: 100%;
+            background: #2d3436;
+            border-radius: 3px;
+            width: 0%;
+            transition: width 0.1s linear;
+        }
+
+        .time-display {
+            font-size: 0.9em;
+            color: #2d3436;
+            font-weight: 500;
+            min-width: 80px;
+            text-align: right;
+        }
+
+        .volume-control {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-top: 15px;
+        }
+
+        .volume-slider {
+            width: 100px;
+            height: 4px;
+            background: rgba(255, 255, 255, 0.3);
+            border-radius: 2px;
+            cursor: pointer;
+            position: relative;
+        }
+
+        .volume-bar {
+            height: 100%;
+            background: #2d3436;
+            border-radius: 2px;
+            width: 70%;
+        }
+
+        .volume-icon {
+            font-size: 16px;
+            color: #2d3436;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 20px;
+            }
+            
+            .title {
+                font-size: 2em;
+            }
+            
+            .message {
+                font-size: 1em;
+            }
+            
+            .audio-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .sparkle {
+            position: fixed;
+            pointer-events: none;
+            animation: sparkle 3s linear infinite;
+        }
+
+        @keyframes sparkle {
+            0% {
+                transform: translateY(0) rotate(0deg);
+                opacity: 1;
+            }
+            100% {
+                transform: translateY(-100px) rotate(360deg);
+                opacity: 0;
+            }
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-50%) scale(0.8);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(-50%) scale(1);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">🎉 Läbipääs Saavutatud! 🎉</h1>
+        
+        <div class="message">
+            Oled närinud läbi krüptograafiast, inseneritekstidest, peidetud salasõnadest ja peadpööritavast mõistatusest. 
+            Isegi Tammsaare pole su jaoks liiga pähkel. Nüüd, laps (20aastane UNC), pane oma läpakas kotti ja asu teele. 
+            Suunaks võta lääs, mööda pikka koridori lonka. Sinine pinksilaud... vist... kui see veel seal on... 
+            Selle kõrval asuvad laekad, lukud peal. Mõni lukk on erilisem, kummalisem, oivalisem kui teised. 
+            Võtme jaoks istu ja kuula neid nelja viisi, märka neid nelja viisi, avasta neid nelja viisi. 
+            Kivi kotti!
+        </div>
+
+        <div class="audio-section">
+            <h2 class="audio-title">🎵 Nelja Viisi Salajased Helid 🎵</h2>
+            
+            <div class="audio-grid">
+                <div class="audio-player">
+                    <h3>Esimene</h3>
+                    <div class="audio-controls">
+                        <button class="play-button" onclick="togglePlay(this, 'one.mp3')">▶</button>
+                        <div class="progress-container" onclick="seekAudio(event, this, 'one.mp3')">
+                            <div class="progress-bar" id="progress-one"></div>
+                        </div>
+                        <span class="time-display" id="time-one">0:00</span>
+                    </div>
+                    <div class="volume-control">
+                        <span class="volume-icon">🔊</span>
+                        <div class="volume-slider" onclick="setVolume(event, this, 'one.mp3')">
+                            <div class="volume-bar"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="audio-player">
+                    <h3>Teine</h3>
+                    <div class="audio-controls">
+                        <button class="play-button" onclick="togglePlay(this, 'two.mp3')">▶</button>
+                        <div class="progress-container" onclick="seekAudio(event, this, 'two.mp3')">
+                            <div class="progress-bar" id="progress-two"></div>
+                        </div>
+                        <span class="time-display" id="time-two">0:00</span>
+                    </div>
+                    <div class="volume-control">
+                        <span class="volume-icon">🔊</span>
+                        <div class="volume-slider" onclick="setVolume(event, this, 'two.mp3')">
+                            <div class="volume-bar"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="audio-player">
+                    <h3>Kolmas</h3>
+                    <div class="audio-controls">
+                        <button class="play-button" onclick="togglePlay(this, 'three.mp3')">▶</button>
+                        <div class="progress-container" onclick="seekAudio(event, this, 'three.mp3')">
+                            <div class="progress-bar" id="progress-three"></div>
+                        </div>
+                        <span class="time-display" id="time-three">0:00</span>
+                    </div>
+                    <div class="volume-control">
+                        <span class="volume-icon">🔊</span>
+                        <div class="volume-slider" onclick="setVolume(event, this, 'three.mp3')">
+                            <div class="volume-bar"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="audio-player">
+                    <h3>Neljas</h3>
+                    <div class="audio-controls">
+                        <button class="play-button" onclick="togglePlay(this, 'four.mp3')">▶</button>
+                        <div class="progress-container" onclick="seekAudio(event, this, 'four.mp3')">
+                            <div class="progress-bar" id="progress-four"></div>
+                        </div>
+                        <span class="time-display" id="time-four">0:00</span>
+                    </div>
+                    <div class="volume-control">
+                        <span class="volume-icon">🔊</span>
+                        <div class="volume-slider" onclick="setVolume(event, this, 'four.mp3')">
+                            <div class="volume-bar"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const audioElements = {};
+        const currentlyPlaying = null;
+
+        // Initialize audio elements
+        ['one.mp3', 'two.mp3', 'three.mp3', 'four.mp3'].forEach(file => {
+            const audio = new Audio(file);
+            audio.addEventListener('timeupdate', () => updateProgress(file));
+            audio.addEventListener('loadedmetadata', () => updateTimeDisplay(file));
+            audio.addEventListener('ended', () => onAudioEnded(file));
+            audioElements[file] = audio;
+        });
+
+        function togglePlay(button, file) {
+            const audio = audioElements[file];
+            
+            if (currentlyPlaying && currentlyPlaying !== audio) {
+                currentlyPlaying.pause();
+                document.querySelectorAll('.play-button').forEach(btn => {
+                    btn.textContent = '▶';
+                    btn.classList.remove('playing');
+                });
+            }
+
+            if (audio.paused) {
+                audio.play();
+                button.textContent = '⏸';
+                button.classList.add('playing');
+                currentlyPlaying = audio;
+            } else {
+                audio.pause();
+                button.textContent = '▶';
+                button.classList.remove('playing');
+                currentlyPlaying = null;
+            }
+        }
+
+        function updateProgress(file) {
+            const audio = audioElements[file];
+            const progressBar = document.getElementById(`progress-${file.split('.')[0]}`);
+            if (progressBar && audio.duration) {
+                const progress = (audio.currentTime / audio.duration) * 100;
+                progressBar.style.width = `${progress}%`;
+                updateTimeDisplay(file);
+                
+                // Check if third song reached 5 seconds
+                if (file === 'three.mp3' && audio.currentTime >= 5 && !audio.dataset.shazamShown) {
+                    audio.dataset.shazamShown = 'true';
+                    showShazamImage();
+                }
+            }
+        }
+
+        function showShazamImage() {
+            const img = document.createElement('img');
+            img.src = 'shazam.png';
+            img.style.position = 'fixed';
+            img.style.right = '20px';
+            img.style.top = '50%';
+            img.style.transform = 'translateY(-50%)';
+            img.style.width = 'auto';
+            img.style.height = 'auto';
+            img.style.maxWidth = '300px';
+            img.style.maxHeight = '280px';
+            img.style.zIndex = '1000';
+            img.style.boxShadow = '0 10px 30px rgba(0, 0, 0, 0.3)';
+            img.style.borderRadius = '15px';
+            img.style.animation = 'fadeIn 0.5s ease-in';
+            
+            document.body.appendChild(img);
+        }
+
+        function updateTimeDisplay(file) {
+            const audio = audioElements[file];
+            const timeDisplay = document.getElementById(`time-${file.split('.')[0]}`);
+            if (timeDisplay && audio.duration) {
+                const current = formatTime(audio.currentTime);
+                const total = formatTime(audio.duration);
+                timeDisplay.textContent = `${current} / ${total}`;
+            }
+        }
+
+        function formatTime(seconds) {
+            const mins = Math.floor(seconds / 60);
+            const secs = Math.floor(seconds % 60);
+            return `${mins}:${secs.toString().padStart(2, '0')}`;
+        }
+
+        function seekAudio(event, container, file) {
+            const audio = audioElements[file];
+            const rect = container.getBoundingClientRect();
+            const percent = (event.clientX - rect.left) / rect.width;
+            audio.currentTime = percent * audio.duration;
+        }
+
+        function setVolume(event, container, file) {
+            const audio = audioElements[file];
+            const rect = container.getBoundingClientRect();
+            const percent = (event.clientX - rect.left) / rect.width;
+            audio.volume = Math.max(0, Math.min(1, percent));
+            
+            const volumeBar = container.querySelector('.volume-bar');
+            volumeBar.style.width = `${percent * 100}%`;
+        }
+
+        function onAudioEnded(file) {
+            const button = document.querySelector(`button[onclick*="${file}"]`);
+            if (button) {
+                button.textContent = '▶';
+                button.classList.remove('playing');
+            }
+            if (currentlyPlaying === audioElements[file]) {
+                currentlyPlaying = null;
+            }
+        }
+
+        // Add sparkle effects
+        function createSparkle() {
+            const sparkle = document.createElement('div');
+            sparkle.className = 'sparkle';
+            sparkle.innerHTML = '✨';
+            sparkle.style.left = Math.random() * window.innerWidth + 'px';
+            sparkle.style.top = Math.random() * window.innerHeight + 'px';
+            sparkle.style.fontSize = Math.random() * 20 + 10 + 'px';
+            document.body.appendChild(sparkle);
+            
+            setTimeout(() => sparkle.remove(), 3000);
+        }
+
+        // Create sparkles periodically
+        setInterval(createSparkle, 500);
+    </script>
+</body>
+</html>
